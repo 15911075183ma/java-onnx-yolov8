@@ -62,7 +62,7 @@ public class PostProcessingOfPredictionResults {
                 int top = (int) ((y1 - h / 2) * high);
                 int width = (int) (w * wide);
                 int height = (int) (h * high);
-                BoundingBox boundingBox = new BoundingBox(left, top, width, height, aDouble, anInt,typeDictionary.getOrDefault(anInt,"unknown"));
+                BoundingBox boundingBox = new BoundingBox(left, top, width, height, aDouble, anInt,typeDictionary.getOrDefault(anInt,"unknown"),null);
                 boundingBoxes.add(boundingBox);
             }
         }
